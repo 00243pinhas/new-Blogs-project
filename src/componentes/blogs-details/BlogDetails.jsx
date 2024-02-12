@@ -11,12 +11,12 @@ export default function BlogDetails() {
 
    const history = useHistory()
 
-   const {data:blog,error,isPending} = useFetch('http://localhost:8000/blogs/' + id);
+   const {data:blog,error,isPending} = useFetch('https://crabby-pantsuit-duck.cyclic.app/blog/' + id);
    
    console.log(id)
 
    const handelDelete = ()=>{
-        fetch('http://localhost:8000/blogs/' + id,{
+        fetch('https://crabby-pantsuit-duck.cyclic.app/blog/' + id,{
             
         method:'DELETE'
         }).then(()=>{

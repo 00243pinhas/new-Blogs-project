@@ -17,7 +17,7 @@ export default function Create() {
 
     const blogs = {title,body,author}
 
-    fetch(' http://localhost:8000/blogs',{
+    fetch(' https://crabby-pantsuit-duck.cyclic.app/blog',{
 
     method:'POST',
     headers:{'content-type': 'Application/json'},
