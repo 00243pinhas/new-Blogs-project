@@ -11,3 +11,12 @@
    margin-top: 15px;
    /* color: white; */
 }
+
+
+
+
+@media screen and (max-width:   1320px){
+    .disclamer{
+        height: auto;
+    }
+}
