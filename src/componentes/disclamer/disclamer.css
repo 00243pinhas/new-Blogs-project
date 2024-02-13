@@ -1,0 +1,13 @@
+
+.disclamer{
+    height: 50px;
+    border: 1px solid red;
+    text-align: center;
+    background-color: red;
+   
+}
+
+.disclamer p{
+   margin-top: 15px;
+   /* color: white; */
+}
