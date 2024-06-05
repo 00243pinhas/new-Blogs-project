@@ -10,7 +10,7 @@ import useFetch from '../useFetch'
 export default function Home() {
 
 
-    const{ data:blogs,isPending,error} = useFetch('https://crabby-pantsuit-duck.cyclic.app/blog')
+    const{ data:blogs,isPending,error} = useFetch('http://localhost:3000/blog')
    
   return (
     <div className="home">
