@@ -1,78 +1,59 @@
-import React, { useState } from 'react'
-
-import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
-
-import '../create/create.css'
-
-export default function Create() {
-
-  const [title,setTitle]=useState('')
-  const [body ,setBody]=useState('')
-  const [author ,setAuthor]=useState('Lugui')
-  const history = useHistory()
+import { useState } from 'react'
 
 
-  const handlSubmit =(e)=>{
-    e.preventDefault()
 
-    const blogs = {title,body,author}
 
-    fetch(' https://crabby-pantsuit-duck.cyclic.app/blog',{
+export default function Home() {
 
-    method:'POST',
-    headers:{'content-type': 'Application/json'},
-    body: JSON.stringify(blogs)
-    }).then(()=>{
-      console.log('New Data just Arrived ')
-      history.push('/')
-    })
+  const [title, settitle]=useState("");
+  const [author, setAuthor]=useState("");
+  const [body,setbody]=useState("");
+  
+  
+    const handleSubmit=(event) => {
+      event.preventDefault();
 
-    // console.log(blogs);
-  }
+      const newblogs={title,author,body};
 
+      fetch('http://127.0.0.1:5000/blogs', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newblogs),
+      })
+        .then(response => response.json())
+        .then(data => console.log('Blog created:', data))
+        .catch(error => console.error('Error creating blog:', error));
+    };
+
+  
   return (
-    <div className="create">
+    <form onSubmit={handleSubmit}>
 
-      <h2>Add A new Blog </h2>
-          
-      <form onSubmit={handlSubmit}>
+      <input type="text" value={title} 
+      onChange={(e) => settitle(e.target.value)}
+       placeholder="title" 
+       required 
+      />
 
-            <label> Blog Title</label>
+      <input type="text" value={author} 
+      onChange={(e) => setAuthor(e.target.value)}
+       placeholder="Author" 
+       required 
+      />
 
-            <input
-                type='text'
-                required
+      <input type="text"
+          value={body}
+          onChange={(e)=>setbody(e.target.value)}
+          placeholder='body authore'
+          required
+       />
 
-                value={title}
-                onChange={(e)=> setTitle(e.target.value)}
-            />
-
-            <label> Bloge Body :</label>
-
-              <textarea 
-              
-              value={body}
-
-              onChange={(e)=> setBody(e.target.value)}
-              
-              required
-              
-              ></textarea>
-
-              <label> Blog Author :</label>
-
-              <select
-                    value={author}
-                    onChange={(e) => setAuthor(e.target.value)}
-                    >
-                    <option value="Mario">Mario</option>
-                    <option value="Luigi">Luigi</option>
-              </select>
-
-
-              <button type="submit">Submit</button>   
-
-      </form>
-    </div>
+      <button type="submit">Create Blog</button>
+    </form>
   )
+
 }
+
+
