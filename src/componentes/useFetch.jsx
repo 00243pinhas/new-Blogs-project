@@ -43,4 +43,8 @@ export default function useFetch(url) {
     },[])  // dodo U need to see How this hook works in Ure spare time 
 
   return{data,isPending,error}
+
+
 }
+
+// we need to design another one actually many of them

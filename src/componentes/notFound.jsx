@@ -6,3 +6,6 @@ export default function NotFound() {
     <div>Huh!! You are Lost Completely...</div>
   )
 }
+
+
+// Todo we need a loader 

@@ -20,3 +20,6 @@ export default function BlogList({blogs,title}) {
     </div>
   )
 }
+
+
+// todo this is the block we have to design 
