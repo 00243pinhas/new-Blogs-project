@@ -25,3 +25,6 @@ export default function BlogList({ blogs, title, onDelete }) {
     </div>
   );
 }
+
+
+// Create a new card on my own using react 
