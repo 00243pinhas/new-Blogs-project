@@ -2,34 +2,22 @@ import '../home/home.css'
 
 import { useState , useEffect} from 'react'
 
+import BlogList from '../blogList'
 
+import useFetch from '../useFetch'
 
 
 export default function Home() {
 
-  const [blogs, setBlogs] = useState([]);
 
-
-  useEffect(()=>{
-
-      fetch('http://127.0.0.1:5000/blogs')
-      .then(response => response.json())
-      .then(data => setBlogs(data))
-      .catch(error => console.error('Error fetching blogs:', error));
-
-  },[]);
-
+    const{ data:blogs,isPending,error} = useFetch('http://127.0.0.1:5000/blogs')
+   
   return (
+    <div className="home">
 
-    <div>
-      
-    {blogs.map((blog) => (
-            <div key={blog.id}>
-              <h2>{blog.title}</h2>
-              <p>By {blog.author}</p>
-              <p>{blog.body}</p>
-            </div>
-          ))}
+      {error && <p> {error} </p>} 
+      {isPending && <p>Loading...</p>}
+      {blogs && < BlogList blogs={blogs}  />}
     </div>
   )
 

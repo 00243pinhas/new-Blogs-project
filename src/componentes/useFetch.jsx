@@ -16,7 +16,7 @@ export default function useFetch(url) {
   
           .then(res => {
   
-            console.log(res)
+            // console.log(res)
   
               if(!res.ok){
                 throw Error ('Oupps ... Your are Lost... ')
