@@ -8,12 +8,12 @@ export default function Home() {
   const [title, settitle]=useState("");
   const [author, setAuthor]=useState("");
   const [body,setbody]=useState("");
-  
+  const [image,setImage]=useState("")
   
     const handleSubmit=(event) => {
       event.preventDefault();
 
-      const newblogs={title,author,body};
+      const newblogs={title,author,image,body};
 
       fetch('http://127.0.0.1:5000/blogs', {
         method: 'POST',
@@ -31,11 +31,7 @@ export default function Home() {
   return (
     <form onSubmit={handleSubmit}>
 
-      <input type="text" value={title} 
-      onChange={(e) => settitle(e.target.value)}
-       placeholder="title" 
-       required 
-      />
+      <input type="text" value={title} onChange={(e) => settitle(e.target.value)} placeholder="title" required />
 
       <input type="text" value={author} 
       onChange={(e) => setAuthor(e.target.value)}
@@ -47,6 +43,14 @@ export default function Home() {
           value={body}
           onChange={(e)=>setbody(e.target.value)}
           placeholder='body authore'
+          required
+       />
+
+      <input type="file" 
+          accept="image/*"
+          value={image}
+          onChange={(e)=>setImage(e.target.value)}
+          placeholder='picture'
           required
        />
 

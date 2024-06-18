@@ -10,7 +10,7 @@ export default function BlogList({ blogs, title, onDelete }) {
         {blogs.map((blog) => (
           <Card className="max-w-sm" key={blog.id}>
             <Link to={`/blogs/${blog.id}`}>
-              <img src={`/images/blog/${blog.id}.jpg`} alt={blog.title} className="h-48 w-full object-cover mb-4"/>
+              <img src={blog.image} alt={blog.title} className="h-48 w-full object-cover mb-4"/>
               <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 {blog.title}
               </h5>
