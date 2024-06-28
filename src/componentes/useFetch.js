@@ -1,50 +1,53 @@
-import { useEffect , useState} from "react";
+// import { useEffect , useState} from "react";
 
-export default function useFetch(url) {
+// export default function useFetch(url) {
 
-    const [data, setData] = useState(null);
+//     const [data, setData] = useState(null);
 
-    const [isPending, setIsPending]=useState(true);
+//     const [isPending, setIsPending]=useState(true);
   
-    const [error,setError]=useState(true)
+//     const [error,setError]=useState(true)
 
 
-    useEffect(()=> {
+//     useEffect(()=> {
 
-        setTimeout(()=>{
-          fetch(url)
+//         setTimeout(()=>{
+//           fetch(url)
   
-          .then(res => {
+//           .then(res => {
   
-            // console.log(res)
+//             // console.log(res)
   
-              if(!res.ok){
-                throw Error ('Oupps ... Your are Lost... ')
-              }
+//               if(!res.ok){
+//                 throw Error ('Oupps ... Your are Lost... ')
+//               }
               
-            return res.json();
-          })
+//             return res.json();
+//           })
   
-          .then(data => {
-            console.log(data)
-            setData(data)
-            setIsPending(false)
-            setError(null)
-          })
-          .catch(err =>{
-            setError(err.message)
-            setIsPending(false)
-          })
-        },2000);
+//           .then(data => {
+//             console.log(data)
+//             setData(data)
+//             setIsPending(false)
+//             setError(null)
+//           })
+//           .catch(err =>{
+//             setError(err.message)
+//             setIsPending(false)
+//           })
+//         },2000);
 
-        // return () => {
-        //     console.log('Jesus Is my Lord')
-        // }
-    },[])  // dodo U need to see How this hook works in Ure spare time 
+//         // return () => {
+//         //     console.log('Jesus Is my Lord')
+//         // }
+//     },[])  // dodo U need to see How this hook works in Ure spare time 
 
-  return{data,isPending,error}
+//   return{data,isPending,error}
 
 
-}
+// }
 
-// we need to design another one actually many of them
+// // we need to design another one actually many of them
+// // maybe we need to add the api contex in this costume use effect 
+
+

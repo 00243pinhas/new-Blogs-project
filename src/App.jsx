@@ -16,7 +16,6 @@ function App() {
       <Router>
       <div className="app"></div>
           <NavBar/> 
-
           <div className="disclamerWrapper">
             <Disclamer/>
           </div>
