@@ -1,30 +1,18 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import { Card } from 'flowbite-react';
+import React from 'react';
+// import Card from './Card';
 
-// export default function BlogList({ blogs, title, onDelete }) {
-//   return (
-//     <div className="blog-list">
-//       <h2 className="text-3xl font-bold mb-6">{title}</h2>
-//       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-//         {blogs.map((blog) => (
-//           <Card className="max-w-sm" key={blog.id}>
-//             <Link to={`/blogs/${blog.id}`}>
-//               <img src={blog.image} alt={blog.title} className="h-48 w-full object-cover mb-4"/>
-//               <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-//                 {blog.title}
-//               </h5>
-//               <p className="font-normal text-gray-700 dark:text-gray-400">
-//                 written by: {blog.author}
-//               </p>
-//             </Link>
-
-//           </Card>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
-
-
-// Create a new card on my own using react 
+export default function BlogList({ blogs}) {
+  return (
+    <div className="blog-list">
+      {/* <h2 className="text-3xl font-bold mb-6">{title}</h2> */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {blogs.map((blog) => (
+          <div className="card" key={blog.id}>
+            <span>{blog.title}</span>
+            <span>{blog.body}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}

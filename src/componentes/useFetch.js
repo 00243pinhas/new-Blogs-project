@@ -1,53 +1,40 @@
-// import { useEffect , useState} from "react";
-
-// export default function useFetch(url) {
-
-//     const [data, setData] = useState(null);
-
-//     const [isPending, setIsPending]=useState(true);
-  
-//     const [error,setError]=useState(true)
+import React, {useContext,useEffect} from 'react';
+import { BlogContext } from './contex';
 
 
-//     useEffect(()=> {
+const useFetchBlogs = () => {
+  const { blogs, setBlogs, isPending, setIsPending, error, setError } = useContext(BlogContext);
 
-//         setTimeout(()=>{
-//           fetch(url)
-  
-//           .then(res => {
-  
-//             // console.log(res)
-  
-//               if(!res.ok){
-//                 throw Error ('Oupps ... Your are Lost... ')
-//               }
-              
-//             return res.json();
-//           })
-  
-//           .then(data => {
-//             console.log(data)
-//             setData(data)
-//             setIsPending(false)
-//             setError(null)
-//           })
-//           .catch(err =>{
-//             setError(err.message)
-//             setIsPending(false)
-//           })
-//         },2000);
+  useEffect(() => {
+    const fetchData = async () => {
+      setIsPending(true);
+      try {
+        const url ='http://127.0.0.1:5000/blogs';
+        
+        setTimeout(async () => {
+          const response = await fetch(url);
+          if (!response.ok) {
+            throw new Error('Oops ... You are Lost...');
+          }
+          const data = await response.json();
+          setBlogs(data); 
+          setIsPending(false);
+          setError(null);
+        }, 2000);
+      } catch (error) {
+        setError(error.message);
+        setIsPending(false);
+      }
+    };
 
-//         // return () => {
-//         //     console.log('Jesus Is my Lord')
-//         // }
-//     },[])  // dodo U need to see How this hook works in Ure spare time 
+    fetchData();
 
-//   return{data,isPending,error}
+    
+    return () => clearTimeout(fetchData);
 
+  }, [ setBlogs, setIsPending, setError]);
 
-// }
+  return { blogs, isPending, error };
+};
 
-// // we need to design another one actually many of them
-// // maybe we need to add the api contex in this costume use effect 
-
-
+export default useFetchBlogs;
