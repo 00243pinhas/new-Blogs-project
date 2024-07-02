@@ -1,9 +1,10 @@
-// import '../navBar/navBar.css'
-import { Navbar } from "flowbite-react";
-import { Link } from 'react-router-dom/cjs/react-router-dom.min' 
-// import '../navBar/navbar.css'
 
-export default function NavBar(){
+import '../navBar/navbar.css'
+import { Link } from 'react-router-dom/cjs/react-router-dom.min'
+import { Navbar } from "flowbite-react";
+
+
+export function NavBar() {
   return (
     <Navbar fluid rounded>
       <Navbar.Brand as={Link} href="https://flowbite-react.com">
@@ -25,9 +26,6 @@ export default function NavBar(){
     </Navbar>
   );
 }
-
-// import { Link } from 'react-router-dom/cjs/react-router-dom.min'
-
 // export default function NavBar() {
     
 //   return (
