@@ -1,8 +1,8 @@
 // import { useState } from 'react'
 
 import {NavBar} from "./componentes/navBar/NavBar.jsx"  
-import Home from "./componentes/home/Home.jsx"
-import Create  from "./componentes/create/create.jsx"
+import Home from "./view/home/Home.jsx"
+import Create  from "./view/create/create.jsx"
 import BlogDetails from "./componentes/blogs-details/BlogDetails.jsx"
 import { BrowserRouter as Router, Route , Switch } from "react-router-dom/cjs/react-router-dom.min.js"
 import NotFound from "./componentes/notFound.jsx"
