@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route , Switch } from "react-router-dom/cjs/re
 import NotFound from "./componentes/notFound.jsx"
 import Disclamer from "./componentes/disclamer/disclamer.jsx"
 import { BlogProvider } from "./componentes/contex.jsx"
+import { FooterF } from "./componentes/footer/Footer.jsx"
 import './App.css'
 
 
@@ -47,6 +48,8 @@ function App() {
         </div>
 
       </Router>
+
+    <FooterF/>
     </BlogProvider>
     </>
   )
