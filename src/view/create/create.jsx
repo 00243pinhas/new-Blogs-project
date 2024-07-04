@@ -8,12 +8,12 @@ export default function Home() {
   const [title, settitle]=useState("");
   const [author, setAuthor]=useState("");
   const [body,setbody]=useState("");
-  const [image,setImage]=useState("")
+  // const [image,setImage]=useState("")
   
     const handleSubmit=(event) => {
       event.preventDefault();
 
-      const newblogs={title,author,image,body};
+      const newblogs={title,author,body};
 
       fetch('http://127.0.0.1:5000/blogs', {
         method: 'POST',
@@ -46,13 +46,13 @@ export default function Home() {
           required
        />
 
-      <input type="file" 
+      {/* <input type="file" 
           accept="image/*"
           value={image}
           onChange={(e)=>setImage(e.target.value)}
           placeholder='picture'
           required
-       />
+       /> */}
 
       <button type="submit">Create Blog</button>
     </form>
