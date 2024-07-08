@@ -46,13 +46,14 @@ export default function Home() {
           required
        />
 
-      {/* <input type="file" 
-          accept="image/*"
-          value={image}
-          onChange={(e)=>setImage(e.target.value)}
-          placeholder='picture'
+      {/* <input type="text"
+          value={body}
+          onChange={(e)=>setbody(e.target.value)}
+          placeholder='body authore'
           required
        /> */}
+
+       {/* need To come back Here for the categiory input type  */}
 
       <button type="submit">Create Blog</button>
     </form>
