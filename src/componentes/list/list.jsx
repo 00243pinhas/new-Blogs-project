@@ -6,7 +6,7 @@ import useFetchBlogs from '../useFetch'
 
 export default function List(props) {
 
-const { blogs, isPending, error } = useFetchBlogs();
+const { blogs, isPending, error } = useFetchBlogs();  // Here is How i am accessinng data in my whole prject
 
 const filteredData = blogs.filter((el) => {
 
