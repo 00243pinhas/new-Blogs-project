@@ -1,6 +1,5 @@
 import { useState } from 'react'
-
-
+import { Dropdown } from "flowbite-react";
 
 
 export default function Home() {
@@ -8,13 +7,19 @@ export default function Home() {
   const [title, settitle]=useState("");
   const [author, setAuthor]=useState("");
   const [body,setbody]=useState("");
-  const [Category,setCategory]=useState("");
+  const [category,setCategory]=useState("");
   // const [image,setImage]=useState("")
+
+  const handleSelect = (value)=>{
+    // console.log(value);
+
+    setCategory(value);
+  }
   
     const handleSubmit=(event) => {
       event.preventDefault();
 
-      const newblogs={title,author,Category,body};
+      const newblogs={title,author,category,body};
 
       fetch('http://127.0.0.1:5000/blogs', {
         method: 'POST',
@@ -50,14 +55,20 @@ export default function Home() {
           required
        />
 
-      <input type="text"
-          value={Category}
-          onChange={(e)=>setCategory(e.target.value)}
-          placeholder='category'
-          required
-       />
 
-       {/* need To come back Here for the categiory input type  */}
+      <Dropdown label="Dropdown button" dismissOnClick={false}>
+        <Dropdown.Item  onClick={() => handleSelect("Sport")}>Sport</Dropdown.Item>
+        <Dropdown.Item  onClick={() => handleSelect("Love")}>Love</Dropdown.Item>
+        <Dropdown.Item  onClick={() => handleSelect("Social")}>Social</Dropdown.Item>
+        <Dropdown.Item  onClick={() => handleSelect("Politics")}>Politics</Dropdown.Item>
+        <Dropdown.Item  onClick={() => handleSelect("Economics")}>Economics</Dropdown.Item>
+      </Dropdown>
+
+      <input
+       value={category}
+       onChange={(e)=>setCategory(e.target.value)}
+
+       />
 
       <button type="submit">Create Blog</button>
     </form>
