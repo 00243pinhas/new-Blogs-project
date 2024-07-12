@@ -1,6 +1,7 @@
 import React from 'react'
 import useFetchBlogs from '../useFetch'
 import { Button ,Card } from "flowbite-react";
+import '../latestBlog/latestBlog.css'
 
 
 export default function LatestBlog() {
@@ -31,9 +32,12 @@ export default function LatestBlog() {
                     {blog.title}
                     </h5>
             
-                  <h3><strong>Author:</strong> {blog.author}</h3>
+                  <h3> <strong>{blog.author}</strong></h3>
 
+
+                  <div className="body_paragraph">
                   <p> {blog.body}</p>
+                  </div>
 
                   <Button>
                       Read more
