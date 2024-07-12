@@ -3,13 +3,14 @@
 import {NavBar} from "./componentes/navBar/NavBar.jsx"  
 // import Home from "./view/home/Home.jsx"
 // import SearchBlog from "./componentes/search-blogs/SearchBlog.jsx"
-import LatestBlog from "./componentes/latestBlog/LatestBlog.jsx"
+// import LatestBlog from "./componentes/latestBlog/LatestBlog.jsx"
 import Create  from "./view/create/create.jsx"
 import BlogDetails from "./componentes/blogs-details/BlogDetails.jsx"
 import { BrowserRouter as Router, Route , Switch } from "react-router-dom/cjs/react-router-dom.min.js"
 import NotFound from "./componentes/notFound.jsx"
 import { BlogProvider } from "./componentes/contex.jsx"
-// import { FooterF } from "./componentes/footer/Footer.jsx"
+import { FooterF } from "./componentes/footer/Footer.jsx"
+import Test from "./componentes/test.jsx"
 import './App.css'
 
 
@@ -24,9 +25,11 @@ function App() {
            <Switch>
           
             <Route exact path='/'>
+              <Test/>
               {/* <Home/> */}
               {/* <SearchBlog/> */}
-              <LatestBlog/>
+              {/* <LatestBlog/> */}
+
             </Route>
 
             <Route path='/Create'>
@@ -47,7 +50,7 @@ function App() {
 
       </Router>
 
-    {/* <FooterF/> */}
+    <FooterF/>
     </BlogProvider>
     </>
   )

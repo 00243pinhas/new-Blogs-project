@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Dropdown } from "flowbite-react";
-
+import { Button } from "flowbite-react";
+import '../create/create.css'
 
 export default function Home() {
 
@@ -35,42 +36,45 @@ export default function Home() {
         .catch(error => console.error('Error creating blog:', error));
     };
 
-    console.log(body)
+    // console.log(body)
   
   return (
-    <form onSubmit={handleSubmit}>
 
-      <input type="text" value={title} onChange={(e) => settitle(e.target.value)} placeholder="title" required />
+  <div className="formWrapper">
 
-      <input type="text" value={author} 
-      onChange={(e) => setAuthor(e.target.value)}
-       placeholder="Author" 
-       required 
-      />
+          <form  onSubmit={handleSubmit}>
+          
+          <input type="text" value={title} onChange={(e) => settitle(e.target.value)} placeholder="title" required />
 
-      <input type="text"
-          value={body}
-          onChange={(e)=>setbody(e.target.value)}
-          placeholder='body authore'
-          required
-       />
+          <input type="text" value={author} 
+          onChange={(e) => setAuthor(e.target.value)}
+          placeholder="Author" 
+          required 
+          />
 
-      <Dropdown label="Dropdown button" dismissOnClick={false}>
-        <Dropdown.Item  onClick={() => handleSelect("Sport")}>Sport</Dropdown.Item>
-        <Dropdown.Item  onClick={() => handleSelect("Love")}>Love</Dropdown.Item>
-        <Dropdown.Item  onClick={() => handleSelect("Social")}>Social</Dropdown.Item>
-        <Dropdown.Item  onClick={() => handleSelect("Politics")}>Politics</Dropdown.Item>
-        <Dropdown.Item  onClick={() => handleSelect("Economics")}>Economics</Dropdown.Item>
-      </Dropdown>
 
-      <input
-       value={category}
-       onChange={(e)=>setCategory(e.target.value)}
+          <input id='bodyField' type="text"
+              value={body}
+              onChange={(e)=>setbody(e.target.value)}
+              placeholder='body authore'
+              required
+          />
 
-       />
+          <Dropdown label="Category" dismissOnClick={false}>
+            <Dropdown.Item  onClick={() => handleSelect("Sport")}>Sport</Dropdown.Item>
+            <Dropdown.Item  onClick={() => handleSelect("Love")}>Love</Dropdown.Item>
+            <Dropdown.Item  onClick={() => handleSelect("Social")}>Social</Dropdown.Item>
+            <Dropdown.Item  onClick={() => handleSelect("Politics")}>Politics</Dropdown.Item>
+            <Dropdown.Item  onClick={() => handleSelect("Economics")}>Economics</Dropdown.Item>
+          </Dropdown>
 
-      <button type="submit">Create Blog</button>
-    </form>
+
+            <Button type='submit' color="blue">Blue</Button>
+
+          </form>
+
+  </div>
+
   )
 
 }
