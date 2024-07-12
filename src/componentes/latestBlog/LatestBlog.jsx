@@ -17,7 +17,7 @@ export default function LatestBlog() {
     return <div>Error We are Lost...</div>;
   }
 
-  return (
+  return (  
 
     <div>
         {newBlogs.length > 0 ? (
@@ -33,6 +33,6 @@ export default function LatestBlog() {
   )
 }
 
-// We have to fic that rerender issue as quick as possible 
+/// We have to fic that rerender issue as quick as possible 
 
-// We need To find a better mapper that is nice for the design ..
+/// We need To find a better mapper that is nice for the design ..
