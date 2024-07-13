@@ -1,0 +1,15 @@
+.body_paragraph{
+    height: 10rem;
+    overflow: hidden;
+    margin: 0.5rem;
+}
+
+ .body_paragraph p{
+    padding: 1rem;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 3rem;
+}

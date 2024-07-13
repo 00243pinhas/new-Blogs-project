@@ -2,7 +2,7 @@
 // import { func } from 'prop-types';
 import List from '../list/list'
 import { React, useState } from "react";
-
+import"./search-blog.css";
 
 export default function SearchBlog() {
 
@@ -14,16 +14,20 @@ export default function SearchBlog() {
     }
 
   return (
-    <div>
+    <div className='wrapper_gallerie'>
         
-        <input
-            type="text"
-            placeholder="Search for an author..."
-            // value={}
-            onChange={handlingInput}
-        />
+          <div className="serachBarr">
+              <input
+                type="text"
+                placeholder="Search for an author..."
+                onChange={handlingInput}
+            />
+          </div>
 
-        <List input={inputText}/>
+          <div className="gallerie_blogs">
+                 <List input={inputText}/>
+          </div>
+
     </div>
   )
 }

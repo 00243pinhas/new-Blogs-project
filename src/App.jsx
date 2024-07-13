@@ -9,8 +9,8 @@ import BlogDetails from "./componentes/blogs-details/BlogDetails.jsx"
 import { BrowserRouter as Router, Route , Switch } from "react-router-dom/cjs/react-router-dom.min.js"
 import NotFound from "./componentes/notFound.jsx"
 import {BlogProvider}  from "./componentes/contex.jsx"
-import AllBlogs from "./componentes/allBlogs/allBlogs.jsx"
-import { FooterF } from "./componentes/footer/Footer.jsx"
+import AllBlogs from "./view/allBlogs/allBlogs.jsx"
+// import { FooterF } from "./componentes/footer/Footer.jsx"
 import './App.css'
 
 
@@ -52,7 +52,7 @@ function App() {
 
       </Router>
 
-    <FooterF/>
+    {/* <FooterF/> */}
     </BlogProvider>
     </>
   )

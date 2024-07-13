@@ -1,0 +1,15 @@
+.wrapper_gallerie{
+   
+    margin: 3rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    
+}
+
+/* .gallerie_blogs{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 3rem;
+} */
