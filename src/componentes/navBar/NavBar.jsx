@@ -21,7 +21,7 @@ export function NavBar() {
         </Navbar.Link>
         <Navbar.Link href="#">About</Navbar.Link>
         <Navbar.Link href="./create">Create</Navbar.Link>
-        <Navbar.Link href="#">Pricing</Navbar.Link>
+        <Navbar.Link href="./AllBlogs">All</Navbar.Link>
         <Navbar.Link href="#">Contact</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
