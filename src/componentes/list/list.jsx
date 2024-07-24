@@ -48,6 +48,21 @@ if (isPending) {
                     <div className="body_paragraph">
                       <p> {item.body}</p>
                     </div>
+{/* 
+                    <div className="body_paragraph">
+                      <p> {item.image1}</p>
+                    </div> */}
+
+                    {item.image1 && (
+                        <img
+                            src={item.image1}
+                            alt="Blog Image"
+                            className="w-full h-auto object-cover"
+                            style={{ maxWidth: '100%' }} // Adjust styles as needed
+                        />
+                    )}
+
+
                     <Button>
                         Read more
                         <svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
