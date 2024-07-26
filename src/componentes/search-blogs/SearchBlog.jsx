@@ -15,6 +15,10 @@ export default function SearchBlog() {
 
   return (
     <div className='wrapper_gallerie'>
+      
+          <div className="gallerie_blogs">
+                 <List input={inputText}/>
+          </div>
         
           <div className="serachBarr">
               <input
@@ -24,9 +28,6 @@ export default function SearchBlog() {
             />
           </div>
 
-          <div className="gallerie_blogs">
-                 <List input={inputText}/>
-          </div>
 
     </div>
   )

@@ -38,6 +38,7 @@ if (isPending) {
     
             {
                 filteredData.map((item)=>(
+                    
 
                 <Card className="max-w-sm" key={item.id}>
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -53,14 +54,15 @@ if (isPending) {
                       <p> {item.image1}</p>
                     </div> */}
 
-                    {item.image1 && (
+                    {item.image && (
                         <img
-                            src={item.image1}
+                            src={item.image}
                             alt="Blog Image"
                             className="w-full h-auto object-cover"
-                            style={{ maxWidth: '100%' }} // Adjust styles as needed
                         />
                     )}
+
+                    {/* {console.log(item.image)} */}
 
 
                     <Button>

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Dropdown } from "flowbite-react";
-import { Button, Textarea } from "flowbite-react";
+import { Button, Textarea , FloatingLabel} from "flowbite-react";
 import '../create/create.css';
 
 export default function Home() {
@@ -72,6 +72,7 @@ export default function Home() {
           required
         />
 
+        <FloatingLabel variant="outlined" label={category}  disabled={true} />
         <Dropdown label="Category" dismissOnClick={true}>
           <Dropdown.Item onClick={() => handleSelect("Sport")}>Sport</Dropdown.Item>
           <Dropdown.Item onClick={() => handleSelect("Love")}>Love</Dropdown.Item>
