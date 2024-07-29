@@ -9,9 +9,11 @@ form{
   justify-content: center;
   align-items: center;
   gap: 1.7rem;
+  margin-top: 5rem;
 }
 
 #bodyField{
   height: 17rem;
-  width: 30rem;
+  width: 70rem;
 }
+

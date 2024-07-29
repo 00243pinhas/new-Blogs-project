@@ -39,7 +39,7 @@ export default function Home() {
   };
 
   return (
-    <div className="formWrapper">
+    <div className="formWrapper ">
       <form onSubmit={handleSubmit}>
         <input
           type="text"
