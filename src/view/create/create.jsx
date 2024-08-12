@@ -40,7 +40,15 @@ export default function Home() {
 
   return (
     <div className="formWrapper ">
+
+
+          <div className="create_Title">
+            <h1> Create Your First Blogs For Free</h1>
+          </div>
+      
       <form onSubmit={handleSubmit}>
+
+        <label htmlFor="Title">Write the title</label>
         <input
           type="text"
           value={title}
@@ -49,6 +57,7 @@ export default function Home() {
           required
         />
 
+        <label htmlFor="Author">Author</label>
         <input
           type="text"
           value={author}
@@ -57,13 +66,19 @@ export default function Home() {
           required
         />
 
+
+      <label htmlFor="Image">profile image</label>
         <input
           type="file"
           onChange={(e) => setImage(e.target.files[0])}
           placeholder='Image'
           required
+          className="imageSubmit"
+
         />
 
+
+         <label htmlFor="Body">Enter Your Blog</label>
         <Textarea
           id="bodyField"
           value={body}
@@ -72,6 +87,7 @@ export default function Home() {
           required
         />
 
+        <label htmlFor="category">Choose The category Of You Blog</label>
         <FloatingLabel variant="outlined" label={category}  disabled={true} />
         <Dropdown label="Category" dismissOnClick={true}>
           <Dropdown.Item onClick={() => handleSelect("Sport")}>Sport</Dropdown.Item>
@@ -81,7 +97,8 @@ export default function Home() {
           <Dropdown.Item onClick={() => handleSelect("Economics")}>Economics</Dropdown.Item>
         </Dropdown>
 
-        <Button type='submit' color="blue">Submit</Button>
+        <Button type='submit' >Submit</Button>
+
       </form>
     </div>
   );

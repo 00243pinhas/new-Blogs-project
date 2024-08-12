@@ -1,14 +1,19 @@
 
 
-/* .formWrapper{
-  display: table-caption;
-} */
+.formWrapper{
+  /* width: 70rem; */
+  display:grid ;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  /* border: 0.2rem solid; */
+} 
 
 form{
   display: grid;
   justify-content: center;
   align-items: center;
-  gap: 1.7rem;
+  gap: 2rem;
   margin-top: 5rem;
 }
 
@@ -17,3 +22,54 @@ form{
   width: 70rem;
 }
 
+.create_Title h1{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+label{
+    font-size: 1.5rem;
+    font-weight:800;
+}
+
+.imageSubmit{
+  border: 0.3 solid gray;
+}
+
+@media screen and (max-width: 787px) {
+  #bodyField{
+    width: 50rem;
+  }
+  
+}
+
+@media screen and (max-width: 761px) {
+  #bodyField{
+    width: 35rem;
+  }
+
+  .create_Title h1{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+}
+
+@media screen and (max-width: 398px) {
+  #bodyField{
+    width: 20rem;
+  }
+
+  .create_Title h1{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+}
+
+@media screen and (max-width: 344px) {
+ input{
+    width: 20rem;
+ }
+  
+}
