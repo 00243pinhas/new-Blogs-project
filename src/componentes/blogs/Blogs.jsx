@@ -1,8 +1,8 @@
-
 // import List from '../list/list'
+import { Button } from "flowbite-react";
 import { React, useState } from "react";
 import useFetchBlogs from "../useFetch";
-import "./blogs.css"
+import "./blogs.css";
 // import"./search-blog.css";
 
 export default function Blogs() {
@@ -14,40 +14,57 @@ export default function Blogs() {
   }
 
   if(error){
-    return <div>We are Really LOst You Know That..? </div>;
+    return <div>We are Really Lost, You Know That..?</div>;
   }
 
-  // const cardStyle = {
-  //   backgroundImage: 'url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)',
-  // }
-
   return (
+    <>
 
-    <div>Loading...</div>
-    // <div className="blog-card">
-    // <div className="meta">
-    //   <div className="photo" style={cardStyle} ></div>
-    //   <ul className="details">
-    //     <li className="author"><a href="#">John Doe</a></li>
-    //     <li className="date">Aug. 24, 2015</li>
-    //     <li className="tags">
-    //        <ul>
-    //         <li><a href="#">Learn</a></li>
-    //         <li><a href="#">Code</a></li>
-    //         <li><a href="#">HTML</a></li>
-    //         <li><a href="#">CSS</a></li>
-    //       </ul> 
-    //     </li>
-    //   </ul>
-    // </div>
-    // <div className="description">
-    //   <h1>Learning to Code</h1>
-    //   <h2>Opening a door to the future</h2>
-    //   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
-    //   <p className="read-more">
-    //     <a href="#">Read More</a>
-    //   </p>
-    // </div>
-    // </div>
-  )
+    <div className="contentErapper">
+                   
+            <div className="flex flex-wrap justify-center mb-9 gap-5">
+
+                <Button gradientMonochrome="success">Sport </Button>
+                <Button gradientMonochrome="success">Love</Button>
+                <Button gradientMonochrome="success">Politics</Button>
+                <Button gradientMonochrome="success">Social</Button>
+                <Button gradientMonochrome="success">Economics</Button>
+
+            </div>
+              {blogs.map((item) => (
+                <div className="blog-card" key={item.id}> 
+                  <div className="meta">
+                    <div 
+                      className="photo" 
+                      style={{ backgroundImage: `url(${item.image})` }}
+                    ></div>
+                    <ul className="details">
+                      <li className="author"><a href="#">{item.author}</a></li>
+                      <li className="date">Aug. 24, 2015</li>
+                      <li className="tags">
+                        <ul>
+                          <li><a href="#">Learn</a></li>
+                          <li><a href="#">Code</a></li>
+                          <li><a href="#">HTML</a></li>
+                          <li><a href="#">CSS</a></li>
+                        </ul> 
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="description">
+                    <h1>{item.title}</h1>
+                    <h2>{item.category}</h2>
+                        <div className="body_contents">
+                            <p>{item.body}</p>
+                        </div>
+                    <p className="read-more">
+                      <a href="#">Read More</a>
+                    </p>
+                  </div>
+                </div>
+              ))}
+    </div>
+ 
+    </>
+  );
 }

@@ -35,7 +35,7 @@ if (isPending) {
   return (
 
 
-        <div className="good">look</div>
+        <div className="good"></div>
     // <div className='cards' >
     
     //         {

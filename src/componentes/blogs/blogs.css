@@ -11,6 +11,7 @@
     border-radius: 5px;
     overflow: hidden;
     z-index: 0;
+    /* margin-top:10rem ; */
   }
   
   .blog-card a {
@@ -213,3 +214,15 @@
     }
   }
   
+
+  .body_contents{
+    margin: 1rem;
+    height: 25rem;
+    overflow: hidden;
+  }
+
+  .body_contents p{
+    padding: 1rem;
+  }
+
+ 
