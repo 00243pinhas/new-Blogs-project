@@ -99,7 +99,7 @@ export default function Blogs() {
                 </div>
               ))
             ) : (
-              <div>No blogs available for the selected category.</div>
+              <div>Ooops Not Yet Available ...</div>
             )}
 
 
