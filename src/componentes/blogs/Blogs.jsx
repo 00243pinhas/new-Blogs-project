@@ -1,5 +1,5 @@
 // import List from '../list/list'
-import { Button } from "flowbite-react";
+import { Button,Modal } from "flowbite-react";
 import { React, useState } from "react";
 import useFetchBlogs from "../useFetch";
 import "./blogs.css";
@@ -9,8 +9,16 @@ export default function Blogs() {
 
   const {blogs, isPending,error}= useFetchBlogs();
   const [selectedCategory, setSelectedCategory]= useState ("All");
+  const [showModel, setShowmodel]=useState(false);
+  const [selectedBlogs, setSelectedBlogs]= useState(null);
 
   const categories = ["All", "Sport", "Love", "Politics", "Social", "Economic"];
+
+
+  const handleSelectedBlogs = (blog)=>{
+      setSelectedBlogs(blog);
+      setShowmodel(true);
+  }
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
@@ -46,9 +54,6 @@ export default function Blogs() {
                 </Button>
               ))}
             </div>
-              
-           
-
             
             {filterBlogs.length > 0 ? (
               filterBlogs.map((item) => (
@@ -88,7 +93,7 @@ export default function Blogs() {
                       <p>{item.body}</p>
                     </div>
                     <p className="read-more">
-                      <a href="#">Read More</a>
+                      <a href="#" onClick={()=>handleSelectedBlogs(item)}>Read More</a>
                     </p>
                   </div>
                 </div>
@@ -96,9 +101,32 @@ export default function Blogs() {
             ) : (
               <div>No blogs available for the selected category.</div>
             )}
-          </div>
-        
-      
+
+
+            {
+              selectedBlogs && (
+       
+                <Modal dismissible show={showModel}  onClose={() => setShowmodel(false)}>
+                  <Modal.Header>{selectedBlogs.title}</Modal.Header>
+                  <Modal.Body>
+                    <div className="space-y-6">
+                    <p className="text-base leading-relaxed text-gray-500">
+                        {selectedBlogs.body}
+                    </p>
+                    </div>
+                  </Modal.Body>
+                  <Modal.Footer>
+                    <Button>Delete</Button>
+                    <Button color="gray" onClick={() => setShowmodel(false)}>
+                      Decline
+                    </Button>
+                  </Modal.Footer>
+                </Modal>
+              )
+            }
+    </div>
+
+
  
     </>
   );
