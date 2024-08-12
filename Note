@@ -1,0 +1,32 @@
+              <!-- {blogs.map((item) => (
+            <div className="blog-card" key={item.id}> 
+                  <div className="meta">
+                    <div 
+                    className="photo" 
+                      style={{ backgroundImage: `url(${item.image})` }}
+                   ></div>
+                   <ul className="details">
+                     <li className="author"><a href="#">{item.author}</a></li>
+                      <li className="date">Aug. 24, 2015</li>
+                     <li className="tags">
+                      <ul>
+                         <li><a href="#">Learn</a></li>
+                         <li><a href="#">Code</a></li>
+                         <li><a href="#">HTML</a></li>
+                          <li><a href="#">CSS</a></li>
+                       </ul> 
+                     </li>
+                   </ul>
+                 </div>
+                 <div className="description">
+                    <h1>{item.title}</h1>
+                  <h2>{item.category}</h2>
+                      <div className="body_contents">
+                          <p>{item.body}</p>
+                     </div>
+                    <p className="read-more">
+                    <a href="#">Read More</a>
+                  </p>
+                 </div>
+                 </div>
+              ))} -->
