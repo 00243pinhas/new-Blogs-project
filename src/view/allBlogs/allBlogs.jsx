@@ -9,8 +9,6 @@ export default function AllBlogs() {
         <div className="search">
             <SearchBlog/>
         </div>
-
-        
     </div>
   )
 }

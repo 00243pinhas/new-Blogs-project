@@ -20,13 +20,15 @@ export default function SearchBlog() {
                  <List input={inputText}/>
           </div>
         
-          <div className="serachBarr">
+          {/* <div className="serachBarr">
               <input
                 type="text"
                 placeholder="Search for an author..."
                 onChange={handlingInput}
             />
-          </div>
+          </div> */}
+
+          {/* We need To transport this input in the Home page  */}
 
 
     </div>

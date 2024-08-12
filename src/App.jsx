@@ -9,7 +9,8 @@ import BlogDetails from "./componentes/blogs-details/BlogDetails.jsx"
 import { BrowserRouter as Router, Route , Switch } from "react-router-dom/cjs/react-router-dom.min.js"
 import NotFound from "./componentes/notFound.jsx"
 import {BlogProvider}  from "./componentes/contex.jsx"
-import AllBlogs from "./view/allBlogs/allBlogs.jsx"
+import Blogs from "./componentes/blogs/Blogs.jsx"
+// import AllBlogs from "./view/allBlogs/allBlogs.jsx"
 import { FooterF } from "./componentes/footer/Footer.jsx"
 import './App.css'
 
@@ -24,10 +25,6 @@ function App() {
         <div className="content">
            <Switch>
             <Route exact path='/'>
-      
-              {/* <Home/> */}
-              {/* <SearchBlog/> */}
-              {/* <LatestBlog/> */}
               
             </Route>
 
@@ -36,7 +33,8 @@ function App() {
             </Route>
 
             <Route path='/AllBlogs'>
-              <AllBlogs/>
+              {/* <AllBlogs/> */}
+              <Blogs/>
             </Route>
 
             <Route path='/blogs/:id'>
@@ -52,7 +50,7 @@ function App() {
 
       </Router>
 
-    <FooterF/>
+      <FooterF/>
     </BlogProvider>
     </>
   )
