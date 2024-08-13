@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { Dropdown } from "flowbite-react";
 import { useHistory } from "react-router-dom";
-import { Alert } from "flowbite-react";
+// import { Alert } from "flowbite-react";
 import { Button, Textarea , FloatingLabel} from "flowbite-react";
+import { useDispatch } from 'react-redux';
 import '../create/create.css';
 
 export default function Create() {
@@ -11,8 +12,8 @@ export default function Create() {
   const [body, setBody] = useState("");
   const [category, setCategory] = useState("");
   const [image, setImage] = useState(null);
+  const dispatch = useDispatch();
   const history = useHistory()
-  const [showDisclamer, setshowDisclamer] = useState(false);
 
   const handleSelect = (value) => {
     setCategory(value);
@@ -41,7 +42,8 @@ export default function Create() {
         data =>{
           console.log('Blog created:', data)
           history.push("/");
-          setshowDisclamer(true);
+          dispatch({ type: 'SET_SUCCESS', payload: true });
+        
         } 
       
       )
@@ -111,14 +113,6 @@ export default function Create() {
         <Button type='submit' >Submit</Button>
 
       </form>
-
-      {
-          showDisclamer && (
-          <Alert color="success" onDismiss={() => setShowAlert(false)}>
-            <span className="font-medium">You just submited Your Blog  ...</span> 
-          </Alert>
-          )
-      }
     </div>
   );
 }
