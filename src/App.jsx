@@ -1,7 +1,7 @@
 // import { useState } from 'react'
 
 import {NavBar} from "./componentes/navBar/NavBar.jsx"  
-// import Home from "./view/home/Home.jsx"
+import Home from "./view/home/Home.jsx"
 // import SearchBlog from "./componentes/search-blogs/SearchBlog.jsx"
 // import LatestBlog from "./componentes/latestBlog/LatestBlog.jsx"
 import Create  from "./view/create/create.jsx"
@@ -25,7 +25,7 @@ function App() {
         <div className="content">
            <Switch>
             <Route exact path='/'>
-              
+                <Home/>
             </Route>
 
             <Route path='/Create'>

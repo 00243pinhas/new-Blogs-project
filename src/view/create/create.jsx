@@ -1,14 +1,18 @@
 import { useState } from 'react';
 import { Dropdown } from "flowbite-react";
+import { useHistory } from "react-router-dom";
+import { Alert } from "flowbite-react";
 import { Button, Textarea , FloatingLabel} from "flowbite-react";
 import '../create/create.css';
 
-export default function Home() {
+export default function Create() {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [body, setBody] = useState("");
   const [category, setCategory] = useState("");
   const [image, setImage] = useState(null);
+  const history = useHistory()
+  const [showDisclamer, setshowDisclamer] = useState(false);
 
   const handleSelect = (value) => {
     setCategory(value);
@@ -33,7 +37,14 @@ export default function Home() {
     })
 
       .then(response => response.json())
-      .then(data => console.log('Blog created:', data))
+      .then(
+        data =>{
+          console.log('Blog created:', data)
+          history.push("/");
+          setshowDisclamer(true);
+        } 
+      
+      )
       .catch(error => console.error('Error creating blog:',error));
       
   };
@@ -100,6 +111,14 @@ export default function Home() {
         <Button type='submit' >Submit</Button>
 
       </form>
+
+      {
+          showDisclamer && (
+          <Alert color="success" onDismiss={() => setShowAlert(false)}>
+            <span className="font-medium">You just submited Your Blog  ...</span> 
+          </Alert>
+          )
+      }
     </div>
   );
 }
