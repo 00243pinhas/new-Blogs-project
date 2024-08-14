@@ -45,11 +45,11 @@ export default function Home() {
 
                             <div className="flex gap-[2rem] mt-[4rem] ">
                                   <Button color="success" pill>
-                                      Success
+                                      contact Us 
                                   </Button>
 
                                   <Button color="dark" pill>
-                                    Dark
+                                      About Us 
                                   </Button>
                             </div>
 
@@ -81,12 +81,12 @@ export default function Home() {
                             </div>
 
                             <div className="flex gap-[2rem] mt-[4rem] ">
-                                  <Button color="success" pill>
-                                      Success
+                                 <Button color="success" pill>
+                                      contact Us 
                                   </Button>
 
                                   <Button color="dark" pill>
-                                    Dark
+                                      About Us 
                                   </Button>
                             </div>
 
@@ -119,11 +119,11 @@ export default function Home() {
 
                             <div className="flex gap-[2rem] mt-[4rem] ">
                                   <Button color="success" pill>
-                                      Success
+                                      contact Us 
                                   </Button>
 
                                   <Button color="dark" pill>
-                                    Dark
+                                      About Us 
                                   </Button>
                             </div>
 
@@ -150,7 +150,7 @@ export default function Home() {
           </section>
 
 
-          <section  className='mt-[10rem]'>
+          <section  className='mt-[10rem] mb-[10rem]'>
                <div className="flex justify-around items-center texte-center ">
 
                   <div className="aboutUs_image">
@@ -174,7 +174,7 @@ export default function Home() {
                     </div>
 
                     <div className="aboutUs_text_btns">
-                        <button type="button" class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Green</button>
+                        <button type="button" class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Read more</button>
 
                     </div>
 
@@ -183,6 +183,8 @@ export default function Home() {
                
           </section>
 
+
+          {/* TODO: Responsiveness  */}
 
     </div>
   );

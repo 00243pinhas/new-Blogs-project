@@ -19,24 +19,24 @@ export function FooterF() {
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
-              <Footer.Title title="about" />
+              <Footer.Title title="about" className="text-2xl"/>
               <Footer.LinkGroup col>
-                <Footer.Link href="#">Pinhas</Footer.Link>
-                <Footer.Link href="https://pinhas-portfolio.vercel.app/">Portfolio</Footer.Link>
+                <Footer.Link href="#" className="text-xl">Pinhas</Footer.Link>
+                <Footer.Link className="text-xl" href="https://pinhas-portfolio.vercel.app/">Portfolio</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="Follow us" />
+              <Footer.Title title="Follow us"  className="text-2xl" />
               <Footer.LinkGroup col>
-                <Footer.Link href="https://github.com/00243pinhas">Github</Footer.Link>
-                <Footer.Link href="http://www.linkedin.com/in/pinhas-lokonda">LinkedIn</Footer.Link>
+                <Footer.Link href="https://github.com/00243pinhas"  className="text-xl" >Github</Footer.Link>
+                <Footer.Link href="http://www.linkedin.com/in/pinhas-lokonda"  className="text-xl">LinkedIn</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="Legal" />
+              <Footer.Title title="Legal" className="text-2xl"/>
               <Footer.LinkGroup col>
-                <Footer.Link href="#">Privacy Policy</Footer.Link>
-                <Footer.Link href="#">Terms &amp; Conditions</Footer.Link>
+                <Footer.Link href="#" className="text-xl">Privacy Policy</Footer.Link>
+                <Footer.Link href="#" className="text-xl">Terms &amp; Conditions</Footer.Link>
               </Footer.LinkGroup>
             </div>
           </div>
