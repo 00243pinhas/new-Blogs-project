@@ -39,7 +39,7 @@ export default function Blogs() {
   return (
     <>
 
-    <div className="contentWrapper">
+    <div className="mt-[12rem]">
                    
         
 
