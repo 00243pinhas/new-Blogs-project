@@ -6,7 +6,7 @@ import { Navbar, Button } from "flowbite-react";
 
 export function NavBar() {
   return (
-    <Navbar fluid rounded className="p-4"> 
+    <Navbar fluid rounded className="p-4 h-[7rem] fixed top-0 left-0 w-full bg-white shadow-lg z-50"> 
 
       <Navbar.Brand href="https://flowbite-react.com" >  
         {/* <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" /> */}
