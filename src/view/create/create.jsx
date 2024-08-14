@@ -41,7 +41,7 @@ export default function Create() {
       .then(
         data =>{
           console.log('Blog created:', data)
-          history.push("/");
+          history.push("/home");
           dispatch({ type: 'SET_SUCCESS', payload: true });
         
         } 

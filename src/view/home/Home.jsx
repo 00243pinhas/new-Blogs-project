@@ -138,19 +138,18 @@ export default function Home() {
         </Carousel>
       </section>
 
-          <section className="mt-[6rem] grid justify-center items-center texte-center">
+      <section className="mt-[6rem] grid justify-center items-center texte-center">
 
-            <div className="text-center">
-                <h2 className='font-bold text-5xl'>Latest Blogs </h2>
-            </div>
+        <div className="text-center">
+            <h2 className='font-bold text-5xl'>Latest Blogs </h2>
+        </div>
 
-              <div className="mt-[5rem] flex justify-center items-center ">
-                <LatestBlog/>
-              </div>
-          </section>
+          <div className="mt-[5rem] flex justify-center items-center ">
+            <LatestBlog/>
+          </div>
+      </section>
 
-
-          <section  className='mt-[10rem] mb-[10rem]'>
+      <section  className='mt-[10rem] mb-[10rem]'>
                <div className="flex justify-around items-center texte-center ">
 
                   <div className="aboutUs_image">
@@ -181,7 +180,8 @@ export default function Home() {
                   </div>
                </div>
                
-          </section>
+      </section>
+
 
 
           {/* TODO: Responsiveness  */}
