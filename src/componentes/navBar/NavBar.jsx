@@ -6,7 +6,7 @@ import { Navbar, Button } from "flowbite-react";
 
 export function NavBar() {
   return (
-    <Navbar fluid rounded className="p-4 h-[5rem] fixed top-0 left-0 w-full bg-white shadow-lg z-50"> 
+    <Navbar fluid rounded className="p-4 h-[2rem]  w-full bg-[#f1f1f1]  z-50"> 
 
       <Navbar.Brand href="https://flowbite-react.com" >  
         {/* <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" /> */}
@@ -27,6 +27,11 @@ export function NavBar() {
               </li>
 
               <li>
+                <Navbar.Link href="./AllBlogs">Blogs</Navbar.Link>
+
+              </li>
+
+              <li>
                 <Navbar.Link href="./about">About</Navbar.Link>
               </li>
 
@@ -35,15 +40,10 @@ export function NavBar() {
 
               </li>
 
-              <li>
-                <Navbar.Link href="./AllBlogs">All</Navbar.Link>
-
-              </li>
-
-              <li>
+              {/* <li>
                 <Navbar.Link href="#">Contact</Navbar.Link>
 
-              </li>
+              </li> */}
 
             </ul>
           </Navbar.Collapse>
