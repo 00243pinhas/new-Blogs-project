@@ -5,6 +5,8 @@ import { useSelector } from 'react-redux';
 import { Alert } from "flowbite-react";
 import { Button } from "flowbite-react";
 import LatestBlog from '../../componentes/latestBlog/LatestBlog';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min'
+
 
 export default function Home() {
   // const { blogs, isPending, error } = useFetchBlogs();
@@ -44,11 +46,11 @@ export default function Home() {
                             </div>
 
                             <div className="flex gap-[2rem] mt-[4rem] ">
-                                  <Button color="success" pill>
+                                  <Button Link href="./about" color="success" pill>
                                       contact Us 
                                   </Button>
 
-                                  <Button color="dark" pill>
+                                  <Button Link href="./about" color="dark" pill>
                                       About Us 
                                   </Button>
                             </div>
@@ -81,11 +83,11 @@ export default function Home() {
                             </div>
 
                             <div className="flex gap-[2rem] mt-[4rem] ">
-                                 <Button color="success" pill>
+                                 <Button Link href="./about" color="success" pill>
                                       contact Us 
                                   </Button>
 
-                                  <Button color="dark" pill>
+                                  <Button Link href="./about" color="dark" pill>
                                       About Us 
                                   </Button>
                             </div>
@@ -118,11 +120,11 @@ export default function Home() {
                             </div>
 
                             <div className="flex gap-[2rem] mt-[4rem] ">
-                                  <Button color="success" pill>
+                                  <Button Link href="./about" color="success" pill>
                                       contact Us 
                                   </Button>
 
-                                  <Button color="dark" pill>
+                                  <Button Link href="./about" color="dark" pill>
                                       About Us 
                                   </Button>
                             </div>
@@ -173,7 +175,7 @@ export default function Home() {
                     </div>
 
                     <div className="aboutUs_text_btns">
-                        <button type="button" class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Read more</button>
+                        <button Link href="./about" type="button" class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Read more</button>
 
                     </div>
 

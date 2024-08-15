@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Route , Switch } from "react-router-dom/cjs/re
 import NotFound from "./componentes/notFound.jsx"
 import {BlogProvider}  from "./componentes/contex.jsx"
 import Blogs from "./componentes/blogs/Blogs.jsx"
+import AboutUs from "./view/aboutUs/aboutUs.jsx"
 // import AllBlogs from "./view/allBlogs/allBlogs.jsx"
 import { FooterF } from "./componentes/footer/Footer.jsx"
 import './App.css'
@@ -33,13 +34,13 @@ function App() {
             </Route>
 
             <Route path='/AllBlogs'>
-              {/* <AllBlogs/> */}
+            
               <Blogs/>
             </Route>
 
-            {/* <Route path='/blogs/:id'>
-              <BlogDetails/>
-            </Route> */}
+            <Route path='/about'>
+              <AboutUs/>
+            </Route>
 
             <Route path='*'>
               <NotFound/>
