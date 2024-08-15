@@ -10,7 +10,7 @@ export default function LatestBlog() {
 
   const newBlogs = blogs && blogs.length > 0 ? [...blogs].sort((a,b) => new Date(b.updated_at) - new Date(a.updated_at)).slice(0, 3) : [];
 
-  console.log(newBlogs)
+  console.log('Nwe here'+newBlogs)
 
   // const imageHandler= 
 
