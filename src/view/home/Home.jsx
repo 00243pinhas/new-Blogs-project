@@ -160,9 +160,9 @@ export default function Home() {
                   <div className="aboutus_text">
 
                     <div className="aboutUs_text_read">
-                    <h3 className='font-bold text-5xl mb-[2rem] max-sm: text-center'>About Us </h3>
+                    <h3 className='font-bold text-5xl mb-[2rem] '>About Us </h3>
 
-                    <p className='font-normal text-gray-700 dark:text-gray-400 p-[1rem] mb-[2rem] max-sm: text-center'>
+                    <p className='font-normal text-gray-700 dark:text-gray-400 p-[1rem] mb-[2rem] '>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                       <br />
                       Corrupti dolorem eum consequuntur ipsam repellat
@@ -173,7 +173,7 @@ export default function Home() {
                     </p>
                     </div>
 
-                    <div className="aboutUs_text_btns max-sm:align-center text-center">
+                    <div className="aboutUs_text_btns ">
                         <button Link href="./about" type="button" class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Read more</button>
                     </div>
 
@@ -184,7 +184,7 @@ export default function Home() {
 
 
 
-          {/* TODO: Responsiveness  */}
+          {/* TODO: Responsiveness: of the text alignment   */}
 
     </div>
   );
