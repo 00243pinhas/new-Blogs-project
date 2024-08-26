@@ -13,7 +13,11 @@ export default {
     flowbite.content(),
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        costum:["Open Sans", "sans-serif"]
+      }
+    },
   },
   plugins: [
     // require('flowbite/plugin') 

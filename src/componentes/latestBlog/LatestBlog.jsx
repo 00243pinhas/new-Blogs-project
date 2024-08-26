@@ -30,12 +30,12 @@ export default function LatestBlog() {
 
 
                 <Card className="max-w-sm" imgSrc={blog.image}  key={blog.id} vertical >
-                  <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  <h5 className="text-2xl font-costum font-bold tracking-tight text-gray-900 dark:text-white">
                     {/* Noteworthy technology acquisitions 2021 */}
                     {blog.title}
                   </h5>
                       <div className=" h-[23rem] overflow-hidden">
-                          <p className="font-normal text-gray-700 dark:text-gray-400 p-[1rem]">
+                          <p className="font-costum font-normal text-gray-700 dark:text-gray-400 p-[1rem]">
                             {blog.body}
                           </p>
                         </div>

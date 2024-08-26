@@ -17,7 +17,7 @@ export default function Home() {
         {
             isSuccess && (
             <Alert color="success" onDismiss={() => alert('Alert dismissed!')}>
-              <span className="font-medium">You just submited Your Blog  ...</span> 
+              <span className="font-costum  font-medium">You just submited Your Blog  ...</span> 
             </Alert>
             )
         }
@@ -30,13 +30,13 @@ export default function Home() {
                     <div id="full_contente " className='flex justify-between gap-[13rem] items-center  max-md:p-[2rem]  max-sm:grid justify-center align-center text-center '>
                       <div className="text_content">
                             <div className="grid gap-[2rem]">
-                              <h1 className='text-5xl sm:text-center md:text-left md:text-6xl lg:text-7xl font-bold '>
+                              <h1 className='text-5xl sm:text-center md:text-left md:text-6xl lg:text-7xl font-costum font-bold '>
                                   For All Your
                                   <br/>
                                   All Blogs Needed 
                               </h1> 
 
-                                <p className='text-[#3e3b3b] text-xl text-left max-sm:text-center'> 
+                                <p className='font-costum  text-[#3e3b3b] text-xl text-left max-sm:text-center'> 
                                   Lorem ipsum, dolor sit amet consectetur
                                   <br />
                                   adipisicing elit. Minus quidem maiores
@@ -67,13 +67,13 @@ export default function Home() {
                 <div id="full_contente " className='flex justify-between gap-[13rem] items-center  max-md:p-[2rem]  max-sm:grid justify-center align-center text-center '>
                       <div className="text_content">
                             <div className="grid gap-[2rem]">
-                              <h1 className='text-5xl sm:text-center md:text-left md:text-6xl lg:text-7xl font-bold '>
+                              <h1 className='text-5xl sm:text-center md:text-left md:text-6xl lg:text-7xl font-costum font-bold '>
                                   For All Your
                                   <br/>
                                   All Blogs Needed 
                               </h1> 
 
-                                <p className='text-[#3e3b3b] text-xl text-left max-sm:text-center'> 
+                                <p className='font-costum  text-[#3e3b3b] text-xl text-left max-sm:text-center'> 
                                   Lorem ipsum, dolor sit amet consectetur
                                   <br />
                                   adipisicing elit. Minus quidem maiores
@@ -104,13 +104,13 @@ export default function Home() {
                   <div id="full_contente " className='flex justify-between gap-[13rem] items-center  max-md:p-[2rem]  max-sm:grid justify-center align-center text-center '>
                       <div className="text_content">
                             <div className="grid gap-[2rem]">
-                              <h1 className='text-5xl sm:text-center md:text-left md:text-6xl lg:text-7xl font-bold '>
+                              <h1 className='text-5xl sm:text-center md:text-left md:text-6xl lg:text-7xl font-costum font-bold '>
                                   For All Your
                                   <br/>
                                   All Blogs Needed 
                               </h1> 
 
-                                <p className='text-[#3e3b3b] text-xl text-left max-sm:text-center'> 
+                                <p className='font-costum  text-[#3e3b3b] text-xl text-left max-sm:text-center'> 
                                   Lorem ipsum, dolor sit amet consectetur
                                   <br />
                                   adipisicing elit. Minus quidem maiores
@@ -142,7 +142,7 @@ export default function Home() {
       <section className="mt-[6rem] grid justify-center items-center texte-center">
 
         <div className="text-center">
-            <h2 className='font-bold text-5xl'>Latest Blogs </h2>
+            <h2 className='font-costum font-bold text-5xl'>Latest Blogs </h2>
         </div>
 
           <div className="mt-[5rem] flex justify-center items-center ">
@@ -160,25 +160,26 @@ export default function Home() {
                   <div className="aboutus_text">
 
                     <div className="aboutUs_text_read">
-                    <h3 className='font-bold text-5xl mb-[2rem] '>About Us </h3>
+                    <h3 className='font-costum  font-bold text-5xl mb-[2rem] '>About Us </h3>
 
-                    <p className='font-normal text-gray-700 dark:text-gray-400 p-[1rem] mb-[2rem] '>
+                    <p className='font-costum  font-normal text-gray-700 dark:text-gray-400 p-[1rem] mb-[2rem] '>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                       <br />
                       Corrupti dolorem eum consequuntur ipsam repellat
                       <br />
                       dolor soluta aliquid laborum, eius odit consectetur vel
                       <br />
-                        quasi in quidem, eveniet ab est corporis tempore...
+                        quasi in quidem, eve corporis tempore...
                     </p>
                     </div>
 
                     <div className="aboutUs_text_btns ">
-                        <button Link href="./about" type="button" class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Read more</button>
+                        <button Link href="./about" type="button" class="font-costum  text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-costum  font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Read more</button>
                     </div>
 
                   </div>
                </div>
+
                
       </section>
 

@@ -12,7 +12,7 @@ export default function Blogs() {
   const [showModel, setShowmodel]=useState(false);
   const [selectedBlogs, setSelectedBlogs]= useState(null);
 
-  const categories = ["All", "Sport", "Love", "Politics", "Social", "Economic"];
+  const categories = ["All", "Sport", "Love", "Politics", "Social", "Economics"];
 
 
   const handleSelectedBlogs = (blog)=>{
@@ -54,7 +54,7 @@ export default function Blogs() {
                 // </Button>
               <button 
               type="button" 
-              class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+              className="font-costum focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
               key={category}
               gradientMonochrome="success"
               onClick={() => handleCategoryClick(category)}
@@ -119,7 +119,7 @@ export default function Blogs() {
                   <Modal.Header>{selectedBlogs.title}</Modal.Header>
                   <Modal.Body>
                     <div className="space-y-6">
-                    <p className="text-base leading-relaxed text-gray-500">
+                    <p className="<font-costum text-base leading-relaxed text-gray-500">
                         {selectedBlogs.body}
                     </p>
                     </div>
