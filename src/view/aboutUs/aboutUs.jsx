@@ -1,24 +1,93 @@
 import React from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
-
+import { Carousel } from "flowbite-react";
 
 export default function AboutUs(){
     return(
-        <section className='mt-[10rem] '>
+        <section className='grid justify-center align-center'>
 
-
-
-            <div className='grid justify-center text-center gap-[3rem]'>
-                <div className="title_aboutUs">
-                    <h1 className='font-bold  text-3xl'>More About Us  </h1>
-                </div>
-                <div className="wrapper">
-                    <p class="mb-3 text-gray-700 dark:text-gray-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:me-3 first-letter:float-start">Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.</p>
-                    <p class="text-gray-700 dark:text-gray-700">Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy changes with ease, with a complete audit trail for every change.</p>
+                <div className="">
+                    <h1 className='font-costum font-bold text-[3rem]'>Hello, we are the Story Day </h1>
+                    <p className='font-costum text-[2.5rem] text-gray-600'>here what we offert</p>
                 </div>
 
-            </div>
+                <div className="flex justify-center align-center gap-[8rem] mt-[5rem]">
+                    
+                    <div className=" w-[50rem] p-5">
 
+                        <h2>Here is about Us </h2>
+
+                        <p>
+                        Printers in the 1500s scrambled the words from Cicero's "De Finibus Bonorum et Dolorem'' 
+                        after mixing the words in each sentence. They abbreviated the word Dolorem, which means pain,
+                        to the phrase lorem, which does not have an actual meaning. Ipsum means itself. Lorem Ipsum, then, 
+                        refers to your pain. The word "sham pain" in the song by Five Finger Death Punch in modern music lyrics
+                        corresponds to lorem ipsum
+
+                        Printers in the 1500s scrambled the words from Cicero's "De Finibus Bonorum et Dolorem'' 
+                        after mixing the words in each sentence. They abbreviated the word Dolorem, which means pain,
+                        to the phrase lorem, which does not have an actual meaning. Ipsum means itself. Lorem Ipsum, then, 
+                        refers to your pain. The word "sham pain" in the song by Five Finger Death Punch in modern music lyrics
+                        corresponds to lorem ipsum
+
+                        
+
+                        </p>
+                    </div>
+
+                    <div className="mt-[15rem]">
+                        <img src="src/assets/undraw_People_search_re_5rre (1).png" alt="" className='w-full h-auto object-cover rounded-lg max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl h-4xl' />
+                    </div>
+                </div>
+
+                <div className="flex justify-center align-center gap-[8rem] mt-[5rem]">
+
+                    <div className="mt-[1rem]">
+                        <img src="src/assets/undraw_Portfolio_website_re_jsdd.png" alt="" className='w-full h-auto object-cover rounded-lg max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl h-5xl' />
+                    </div>
+                    
+                    <div className=" w-[50rem] p-5">
+
+                        <p>
+                        Printers in the 1500s scrambled the words from Cicero's "De Finibus Bonorum et Dolorem'' 
+                        after mixing the words in each sentence. They abbreviated the word Dolorem, which means pain,
+                        to the phrase lorem, which does not have an actual meaning. Ipsum means itself. Lorem Ipsum, then, 
+                        refers to your pain. The word "sham pain" in the song by Five Finger Death Punch in modern music lyrics
+                        corresponds to lorem ipsum
+
+                        Printers in the 1500s scrambled the words from Cicero's "De Finibus Bonorum et Dolorem'' 
+                        after mixing the words in each sentence. They abbreviated the word Dolorem, which means pain,
+                        to the phrase lorem, which does not have an actual meaning. Ipsum means itself. Lorem Ipsum, then, 
+                        refers to your pain. The word "sham pain" in the song by Five Finger Death Punch in modern music lyrics
+                        corresponds to lorem ipsum
+
+                        
+
+                        </p>
+                    </div>
+
+                </div>
+
+                <div className="mt-[5rem] text-center">
+                    <h1>some of Us</h1>
+
+                <div className="grid h-56 grid-cols-2 gap-4 sm:h-64 xl:h-80 2xl:h-96 mt-[2rem]">
+                    <Carousel>
+                        <img src="src/assets/undraw_Portfolio_website_re_jsdd.png" alt="..." />
+                        <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
+                        <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
+                        <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
+                        <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
+                    </Carousel>
+                    <Carousel indicators={false}>
+                        <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
+                        <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
+                        <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
+                        <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
+                        <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
+                    </Carousel>
+                </div>
+                </div>
         </section>
     )
 }

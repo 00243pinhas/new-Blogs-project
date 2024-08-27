@@ -46,12 +46,12 @@ export default function Home() {
                             </div>
 
                             <div className="flex text-left gap-[2rem] mt-[4rem] max-sm:justify-center ">
-                                  <Button Link href="./about" color="success" pill>
+                                  <Button Link href="./about" color="success" className='font-costum text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-2xl px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"' pill>
                                       contact Us 
                                   </Button>
 
-                                  <Button Link href="./about" color="dark" pill>
-                                      About Us 
+                                  <Button Link href="./about" color="success" className='font-costum text-white bg-gray-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-2xl px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"' pill>
+                                      contact Us 
                                   </Button>
                             </div>
 
@@ -83,12 +83,12 @@ export default function Home() {
                             </div>
 
                             <div className="flex text-left gap-[2rem] mt-[4rem] max-sm:justify-center ">
-                                  <Button Link href="./about" color="success" pill>
+                                <Button Link href="./about" color="success" className='font-costum text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-2xl px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"' pill>
                                       contact Us 
                                   </Button>
 
-                                  <Button Link href="./about" color="dark" pill>
-                                      About Us 
+                                  <Button Link href="./about" color="success" className='font-costum text-white bg-gray-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-2xl px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"' pill>
+                                      contact Us 
                                   </Button>
                             </div>
 
@@ -120,12 +120,12 @@ export default function Home() {
                             </div>
 
                             <div className="flex text-left gap-[2rem] mt-[4rem] max-sm:justify-center ">
-                                  <Button Link href="./about" color="success" pill>
+                                <Button Link href="./about" color="success" className='font-costum text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-2xl px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"' pill>
                                       contact Us 
                                   </Button>
 
-                                  <Button Link href="./about" color="dark" pill>
-                                      About Us 
+                                  <Button Link href="./about" color="success" className='font-costum text-white bg-gray-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-2xl px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"' pill>
+                                      contact Us 
                                   </Button>
                             </div>
 
@@ -174,7 +174,7 @@ export default function Home() {
                     </div>
 
                     <div className="aboutUs_text_btns ">
-                        <button Link href="./about" type="button" class="font-costum  text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-costum  font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Read more</button>
+                        <button Link href="./about" type="button" class="font-costum  text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-costum  font-medium rounded-full text-2xl px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Read more</button>
                     </div>
 
                   </div>
