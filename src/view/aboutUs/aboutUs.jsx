@@ -68,26 +68,26 @@ export default function AboutUs(){
 
                 </div>
 
-                <div className="mt-[5rem] text-center">
+                {/* <div className="mt-[5rem] text-center">
                     <h1>some of Us</h1>
 
                 <div className="grid h-56 grid-cols-2 gap-4 sm:h-64 xl:h-80 2xl:h-96 mt-[2rem]">
                     <Carousel>
                         <img src="src/assets/undraw_Portfolio_website_re_jsdd.png" alt="..." />
-                        <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
-                        <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
-                        <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
-                        <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
+                        <img src="src/assets/undraw_Business_plan_re_0v81.png" alt="..." />
+                        <img src="src/assets/undraw_Businessman_re_mlee.png" alt="..." />
+                        <img src="src/assets/undraw_Completing_re_i7ap.png" alt="..." />
+                        <img src="src/assets/undraw_Insert_re_s97w.png" alt="..." />
                     </Carousel>
                     <Carousel indicators={false}>
-                        <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
-                        <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
-                        <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
-                        <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
-                        <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
+                        <img src="src/assets/undraw_Online_cv_re_gn0a (1).png" alt="..." />
+                        <img src="src/assets/undraw_Online_cv_re_gn0a.png" alt="..." />
+                        <img src="src/assets/undraw_Select_re_3kbd.png" alt="..." />
+                        <img src="src/assets/undraw_website_ij0l.svg" alt="..." />
+                        <img src="src/assets/undraw_Lost_re_xqjt.png" alt="..." />
                     </Carousel>
                 </div>
-                </div>
+                </div> */}
         </section>
     )
 }
