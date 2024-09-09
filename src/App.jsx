@@ -38,6 +38,8 @@ function App() {
               <Blogs/>
             </Route>
 
+        
+
             <Route path='/about'>
               <AboutUs/>
             </Route>
